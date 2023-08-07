@@ -25,6 +25,57 @@
           ]
         }
       ]
+    },
+    {
+      "description": "Ctrl+Z->CMD+Z (Undo) (QWERTZ)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            },
+            "key_code": "y"
+          },
+          "to": [
+            {
+              "repeat": true,
+              "modifiers": [
+                "left_command"
+              ],
+              "key_code": "y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Ctrl+Y->CMD+Shift+Z (Redo) (QWERTZ)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            },
+            "key_code": "z"
+          },
+          "to": [
+            {
+              "repeat": true,
+              "modifiers": [
+                "left_command",
+                "left_shift"
+              ],
+              "key_code": "y"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
